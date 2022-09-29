@@ -1,0 +1,10 @@
+urunler=[]
+adet=int(input('kac urun eklemek istiyorsunuz?:  '))
+i=0
+while (i<adet):
+    isim=input('urun ismi: ')
+    ucret=input('urun fiyati: ')
+    urunler.append({'isim': isim, 'ucret': ucret})
+    i+=1
+for urun in urunler:
+    print(f'urun ismi: {urun["isim"]} urun ucreti: {urun["ucret"]} ')
