@@ -1,0 +1,9 @@
+import datetime
+tarih=input("Hangi tarihte mezun oldunuz?(2019/5/7): ")
+tarih=tarih.split('/')
+simdi=datetime.datetime.now()
+mezuniyet=datetime.datetime(int (tarih[0]),int (tarih[1]),int (tarih[2]))
+fark=simdi-mezuniyet
+print(f' Mezuniyet uzerinden {fark.days} gun gecmis ')
+
+
