@@ -1,0 +1,13 @@
+print('Gecme notunuz hesaplanacak')
+y1=float(input('1.yazili : '))
+y2=float(input('2.yazili : '))
+s=float(input('sozlu :'))
+o=(y1+y2+s)/3
+if (o>=0) and (o<25):
+    print(f'ortalamaniz: {o} notunuz: 1 ')
+elif (o>=25) and (o<50):
+    print(f'ortalamaniz: {o} notunuz: 2 ')
+elif (o>=50) and (o<75):
+    print(f'ortalamaniz: {o} notunuz: 3 ')
+else:
+    print(f'ortalamaniz: {o} notunuz: 4 ')
