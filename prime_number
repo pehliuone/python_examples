@@ -1,16 +1,12 @@
 sayi=int(input('sayi giriniz: '))
-asalmi=True
-if(sayi==1):
- asalmi=False
-else:
+if(sayi>1):
   for x in range(2,sayi):
-   if(sayi%x==0):
-   asalmi=False
-   break
-
-if(asalmi):
-    print("sayi asaldir")
+     if(sayi%x==0):
+        print(sayi,"asal degildir")
+        break
+     else:
+         print(sayi,"asaldir")
 else:
-    print("sayi asal degildir")
+    print(sayi,"asal degildir")
 
 
