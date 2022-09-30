@@ -1,12 +1,14 @@
 import random
 sayi=random.randint(1,100)
-hak=5
+sefer=0
+hak=int(input('kac tahmin yapmak istersiniz?: '))
 while hak>0:
     hak-=1
-    tahmin=int(input('tahmin: '))
+    sefer+=1
+    tahmin=int(input('0-100 arası sayi tahmin ediniz: '))
 
     if sayi==tahmin:
-        print('tebrikler bildiniz.')
+        print(f'tebrikler {sefer} seferde bildiniz.')
         break
     elif sayi>tahmin:
         print('yukarı')
