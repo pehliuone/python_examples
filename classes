@@ -1,0 +1,15 @@
+class Circle:
+    is_shape = True
+    radius, color = 0, ""
+
+    def __init__(self, color, radius):
+        self.color = color
+        self.radius = radius
+
+    def display(self):
+        print("radius:", self.radius)
+        print("color:", self.color)
+
+
+first_circle = Circle("red", 2)
+first_circle.display()
