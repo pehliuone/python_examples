@@ -1,0 +1,14 @@
+while True:
+      sayi=input("Sayi giriniz:  ")
+      if sayi =='q':
+         break
+      try:
+        result=float(sayi)
+        print('girdiginiz sayi: ',result)
+        break
+      except ValueError:
+        print('geçersiz sayi')
+        continue
+
+
+      
