@@ -1,0 +1,7 @@
+liste=['1','2','3','4a','5b']
+for x in liste:
+  try:
+    result=int(x)
+    print(result)
+  except ValueError:
+    continue
