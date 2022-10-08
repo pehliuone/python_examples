@@ -1,0 +1,11 @@
+def faktoriyel(sayi):
+    
+    def ic_faktoriyel(sayi):
+        if sayi<=1:
+           return 1
+    
+        return sayi * ic_faktoriyel(sayi-1)       
+
+    return ic_faktoriyel(sayi)
+
+print(faktoriyel(5))
